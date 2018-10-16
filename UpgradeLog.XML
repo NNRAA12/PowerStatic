@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Multithreaded_Aqu_Processing">
+</Property><Property Name="Solution File" Value="C:\Users\Sean\Documents\My Dropbox\Code\c++\Lab 3\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Sean\Documents\My Dropbox\Code\c++\Lab 3\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.suo">
+</Property><Property Name="Date" Value="Friday, March 23, 2012">
+</Property><Property Name="Time" Value="18:40 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Multithreaded_Aqu_Processing.sln" Description="File successfully backed up as C:\Users\Sean\Documents\My Dropbox\Code\c++\Lab 3\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Multithreaded_Aqu_Processing.suo" Description="File successfully backed up as C:\Users\Sean\Documents\My Dropbox\Code\c++\Lab 3\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.suo.old">
+</Event><Event ErrorLevel="0" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Converting project file 'C:\Users\Sean\Documents\My Dropbox\Code\c++\Lab 3\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Done converting to new project file 'C:\Users\Sean\Documents\My Dropbox\Code\c++\Lab 3\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Multithreaded_Aqu_Processing" Source="Multithreaded_Aqu_Processing\Multithreaded_Aqu_Processing.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Multithreaded_Aqu_Processing.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Multithreaded_Aqu_Processing.sln" Description="Converted">
+</Event></UpgradeLog>
